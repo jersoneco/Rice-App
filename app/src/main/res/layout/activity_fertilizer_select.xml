@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maincolor"
+    tools:context=".ui.home.fertilizer_calculator.FertilizerSelect">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:paddingBottom="8dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Select Days of Maturity."
+            android:fontFamily="@string/font_family_black"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_margin="15dp">
+
+            <Spinner
+                android:id="@+id/days"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Days"
+                android:fontFamily="@string/font_family_medium"
+                android:layout_margin="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/rainy"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Rainy Season"
+                android:background="@drawable/btnbackground"
+                android:layout_margin="15dp"
+                android:elevation="20dp"/>
+
+            <Button
+                android:id="@+id/dry"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Dry Season"
+                android:background="@drawable/btnbackground"
+                android:layout_margin="15dp"
+                android:elevation="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

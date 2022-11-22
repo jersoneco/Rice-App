@@ -1,0 +1,10 @@
+        Bacterial blight first becomes evident as water-soaked streaks that spread from the leaf tips and margins, becoming larger and eventually releasing a milky ooze that dries into yellow droplets. Characteristic grayish white lesions then appear on the leaves, signaling the late stages of infection, when leaves dry out and die.
+
+CAUSE
+        Bacterium Xanthomonas oryzae pv. oryzae.
+
+SYMPTOMS
+        Form larger yellowish lesions with uneven edges.
+
+SOLUTION
+        Triazole and strobilurin fungicides.

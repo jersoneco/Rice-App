@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "94536003339",
+    "firebase_url": "https://rice-pro-default-rtdb.firebaseio.com",
+    "project_id": "rice-pro",
+    "storage_bucket": "rice-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94536003339:android:0be97bad6eedef1438bc0e",
+        "android_client_info": {
+          "package_name": "com.sven.riceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94536003339-r7jo4109silsoji78c2n5p3c54qmk1rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVMkuQg8smoFRbbpqx8uNSnx3JS5x9D-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94536003339-r7jo4109silsoji78c2n5p3c54qmk1rk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

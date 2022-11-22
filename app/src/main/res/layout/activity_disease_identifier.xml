@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maincolor"
+    tools:context=".ui.home.disease_identifier.DiseaseIdentifierActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developed by : SEVN Team"
+                android:textStyle="italic"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_capture"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:elevation="20dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp"/>
+
+            <ListView
+                android:id="@+id/lv_probabilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_capture"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/btnbackground"
+                android:elevation="15dp"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/bt_take_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnbackground"
+                android:elevation="15dp"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:text="Take photo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="25sp"
+                android:layout_below="@+id/lv_probabilities"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hideSheet"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:elevation="5dp"
+        android:layout_margin="8dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/diseaseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <ScrollView
+            android:id="@+id/scrollV"
+            android:layout_width="match_parent"
+            android:layout_height="415dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/diseaseDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black" />
+        </ScrollView>
+        <Button
+            android:id="@+id/learnmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_below="@id/scrollV"
+            android:layout_marginStart="15dp"
+            android:text="Learn More"/>
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_below="@id/scrollV"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:text="Close"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tips"
+        android:onClick="changeImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:elevation="8dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/radius">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tips"
+                    android:fontFamily="@string/font_family_black"
+                    android:textSize="20sp"
+                    android:paddingBottom="8dp"/>
+                <ImageSwitcher
+                    android:id="@+id/imageSwitcher"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/definition"
+                    android:layout_width="match_parent"
+                    android:text="Hello  "
+                    android:paddingTop="10dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:onClick="closeTips"
+                    android:paddingTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Got it"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_marginEnd="10dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
