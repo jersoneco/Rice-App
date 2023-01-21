@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ui.home.health_guide.variety_document.Variety">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/rice_variety" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/riceproductiontitle">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:text="PAGPILI NG BINHI AT BARAYTI" />
+            <TextView
+                android:id="@+id/key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_nav_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    app:menu="@menu/rice_production_menu"
+                    android:outlineSpotShadowColor="@color/green"
+                    app:itemRippleColor="@color/green"
+                    app:itemTextColor="@color/black"/>
+                <FrameLayout
+                    android:id="@+id/bottom_nav_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                </FrameLayout>
+
+                <!--                    <HorizontalScrollView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content">-->
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="80dp"-->
+                <!--                            android:orientation="horizontal"-->
+                <!--                            android:gravity="center">-->
+                <!--                            <Button-->
+                <!--                                android:id="@+id/kahalagahan"-->
+                <!--                                android:padding="5dp"-->
+                <!--                                android:layout_marginEnd="10dp"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                style="@style/TextAppearance.AppCompat.Body2"-->
+                <!--                                android:text="Kahalagahan"-->
+                <!--                                android:elevation="10dp"-->
+                <!--                                android:background="@drawable/radius"-->
+                <!--                                android:fontFamily="@string/font_family_black"/>-->
+                <!--                            <Button-->
+                <!--                                android:padding="5dp"-->
+                <!--                                android:background="@drawable/radius"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:text="Pagtataya o Assessment"-->
+                <!--                                style="@style/TextAppearance.AppCompat.Body2"-->
+                <!--                                android:fontFamily="@string/font_family_black"-->
+                <!--                                android:elevation="10dp"-->
+                <!--                                android:id="@+id/assessment" />-->
+                <!--                            <Button-->
+                <!--                                android:layout_marginStart="10dp"-->
+                <!--                                android:padding="5dp"-->
+                <!--                                android:background="@drawable/radius"-->
+                <!--                                android:elevation="10dp"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:text="Mga rekomendasyon"-->
+                <!--                                style="@style/TextAppearance.AppCompat.Body2"-->
+                <!--                                android:fontFamily="@string/font_family_black"-->
+                <!--                                android:id="@+id/recommendation" />-->
+                <!--                        </LinearLayout>-->
+                <!--                    </HorizontalScrollView>-->
+
+                <TextView
+                    android:id="@+id/kahalagahandecrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:fontFamily="@string/font_family_medium"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginHorizontal="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:fontFamily="@string/font_family_medium"
+                    android:id="@+id/assessmentdecrip"
+                    android:layout_marginHorizontal="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:fontFamily="@string/font_family_medium"
+                    android:id="@+id/recommendationdescrip"
+                    android:layout_marginHorizontal="15dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
