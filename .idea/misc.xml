@@ -4,13 +4,35 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android Studio Projects/Rice App/app/src/main/res/layout/activity_main.xml" value="0.21041666666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/drawable/homebutton.xml" value="0.1645" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/drawable/maincolor.xml" value="0.1645" />
         <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/drawable/one.xml" value="0.1645" />
         <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/drawable/radius.xml" value="0.1645" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/drawable/riceproductionparagraph.xml" value="0.1645" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/drawable/riceproductiontitle.xml" value="0.1645" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/drawable/whiteee.xml" value="0.1645" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout-v28/activity_variety.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_crop.xml" value="0.22447916666666667" />
         <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_disease_identifier.xml" value="0.25" />
         <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_fertilizer_calculator.xml" value="0.22447916666666667" />
         <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_fertilizer_location.xml" value="0.22447916666666667" />
         <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_fertilizer_select.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_harvest.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_land.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_nutrient.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_pest.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_register.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_rice_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_rice_variety.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_variety.xml" value="0.22447916666666667" />
         <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/activity_water.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/fragment_kahalagahan_.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/fragment_pagtataya.xml" value="0.21041666666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/layout/fragment_rekomendasyon.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/menu/home.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio Projects/RiceApp/app/src/main/res/menu/rice_production_menu.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>

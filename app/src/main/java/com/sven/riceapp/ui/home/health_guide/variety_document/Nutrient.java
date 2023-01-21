@@ -164,7 +164,7 @@ public class Nutrient extends AppCompatActivity {
                 "  • Tatlumpung porsyento (30%) lamang ng kabuuang dami ng N ang unang ilalagay.\n" +
                 "  • Sa paglalagay ng paupong abono, ihalo nang maigi ang pataba sa lupang mamasamasa at panatilihing 2-5sm ang lalim ng tubig.\n" +
                 "  • Mas magandang magpataba sa hapon (3PM palampas) nang hindi sumingaw sa " +
-                "hangin at mawaldas ang nitroheno, at nang mas mapakinabangan ito ng halaman.\n\n";
+                "hangin at mawaldas ang nitroheno, at nang mas mapakinabangan ito ng halaman.\n\nSource: PhilRice. (2020). Sistemang Palaycheck, 23-34.\n\n";
 
         kahalagahan.setText(kahalagahan1);
         assessment.setText(assessment1);

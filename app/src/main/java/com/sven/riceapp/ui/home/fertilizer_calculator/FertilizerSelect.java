@@ -2,9 +2,9 @@ package com.sven.riceapp.ui.home.fertilizer_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -26,6 +26,7 @@ public class FertilizerSelect extends AppCompatActivity {
         place = findViewById(R.id.place);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,45 +35,37 @@ public class FertilizerSelect extends AppCompatActivity {
         findId();
 
         String places = getIntent().getExtras().getString("location");
-        place.setText(places);
+        place.setText("Barangay " + places);
 
         String[] day = {"100","105","110","115","120"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, day);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, day);
         days.setAdapter(adapter);
-        String day2 = days.getSelectedItem().toString();
+//        String day2 = days.getSelectedItem().toString();
 
-        dry.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String day2 = days.getSelectedItem().toString();
-                if (day2.isEmpty()){
-                    Toast.makeText(FertilizerSelect.this, "Please Select Days of Maturity!", Toast.LENGTH_LONG).show();
-                } else {
-                    String season = "Rainy";
-                    Intent intent = new Intent(getApplicationContext(), FertilizerCalculatorActivity.class);
-                    intent.putExtra("Days", days.getSelectedItem().toString());
-                    intent.putExtra("Season", season);
-                    startActivity(intent);
-                    finish();
-                }
+        dry.setOnClickListener(v -> {
+            String day2 = days.getSelectedItem().toString();
+            if (day2.isEmpty()){
+                Toast.makeText(FertilizerSelect.this, "Please Select Days of Maturity!", Toast.LENGTH_LONG).show();
+            } else {
+                String season = "Rainy";
+                Intent intent = new Intent(getApplicationContext(), FertilizerCalculatorActivity.class);
+                intent.putExtra("Days", days.getSelectedItem().toString());
+                intent.putExtra("Season", season);
+                startActivity(intent);
             }
         });
 
-        rainy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String day2 = days.getSelectedItem().toString();
-                if (day2.isEmpty()){
-                    Toast.makeText(FertilizerSelect.this, "Please Select Days of Maturity!", Toast.LENGTH_LONG).show();
-                } else {
-                    String season = "Dry";
-                    Intent intent = new Intent(getApplicationContext(), FertilizerCalculatorActivity.class);
-                    intent.putExtra("Days", days.getSelectedItem().toString());
-                    intent.putExtra("Season", season);
-                    startActivity(intent);
-                    finish();
-                }
+        rainy.setOnClickListener(v -> {
+            String day2 = days.getSelectedItem().toString();
+            if (day2.isEmpty()){
+                Toast.makeText(FertilizerSelect.this, "Please Select Days of Maturity!", Toast.LENGTH_LONG).show();
+            } else {
+                String season = "Dry";
+                Intent intent = new Intent(getApplicationContext(), FertilizerCalculatorActivity.class);
+                intent.putExtra("Days", days.getSelectedItem().toString());
+                intent.putExtra("Season", season);
+                startActivity(intent);
             }
         });
     }

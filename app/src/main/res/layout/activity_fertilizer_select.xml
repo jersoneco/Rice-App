@@ -17,14 +17,15 @@
             android:layout_width="match_parent"
             android:textAlignment="center"
             android:textSize="30sp"
-            android:paddingBottom="8dp"
+            android:textColor="@color/white"
+            android:paddingBottom="40dp"
             android:layout_height="wrap_content"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="Select Days of Maturity."
+            android:text="Select Days of Maturity:"
             android:fontFamily="@string/font_family_black"
             android:textSize="25sp"/>
 
@@ -49,6 +50,16 @@
                 android:layout_margin="15dp"/>
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type of SEASONS:"
+            android:gravity="center"
+            android:fontFamily="@string/font_family_black"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:paddingTop="50dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"

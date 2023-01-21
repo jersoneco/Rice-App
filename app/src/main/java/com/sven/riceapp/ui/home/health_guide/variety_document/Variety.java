@@ -2,12 +2,11 @@ package com.sven.riceapp.ui.home.health_guide.variety_document;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.sven.riceapp.R;
-
-
 
 public class Variety extends AppCompatActivity {
 
@@ -56,7 +55,7 @@ public class Variety extends AppCompatActivity {
                 "rehiyon ay tiyak na maganda sa inyong lokalidad;\n\n" +
                 "c. maganda ang resulta ng adaptability trials sa nakalipas na dalawang taniman na " +
                 "isinagawa ng PhilRice o DA office sa inyong lugar; at\n\n" +
-                "d. mabili sa merkado. \n\n";
+                "d. mabili sa merkado. \n\n\nSource: PhilRice. (2020). Sistemang Palaycheck, 6-8.\n\n";
 
 
         kahalagahan.setText(kahalagahand);

@@ -55,7 +55,7 @@ public class Harvest extends AppCompatActivity {
                 "mangingitim ang butil, at pangit ang magiging bigas.\n" +
                 "  • Iwasang maggiik ng basang palay dahil maraming matatapon at masasayang na butil.\n" +
                 "  • Sundin ang rekomendadong threshing speed (800rpm sa pangkaraniwang thresher) " +
-                "upang maihiwalay nang mabuti ang butil sa uhay.\n\n";
+                "upang maihiwalay nang mabuti ang butil sa uhay.\n\n\nSource: PhilRice. (2020). Sistemang Palaycheck, 45-47.\n\n";
 
         kahalagahan.setText(kahalagahan1);
         assessment.setText(assessment1);

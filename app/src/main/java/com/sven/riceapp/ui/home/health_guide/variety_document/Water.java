@@ -60,7 +60,7 @@ public class Water extends AppCompatActivity {
                 "6. Kung kulang sa tubig, isagawa ang controlled irrigation o Alternate Wetting and " +
                 "Drying (AWD) technology sa tulong ng observation well.\n" +
                 "  • Kapag naubos na ang tubig sa observation well, hudyat ito na kailangan nang\n" +
-                "magpatubig.";
+                "magpatubig.\n\nSource: PhilRice. (2020). Sistemang Palaycheck, 35-37.\n\n";
 
         kahalagahan.setText(kahalagahan1);
         assessment.setText(assessment1);

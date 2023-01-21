@@ -12,6 +12,7 @@ import com.sven.riceapp.ui.home.health_guide.variety_document.Harvest;
 import com.sven.riceapp.ui.home.health_guide.variety_document.Land;
 import com.sven.riceapp.ui.home.health_guide.variety_document.Nutrient;
 import com.sven.riceapp.ui.home.health_guide.variety_document.Pest;
+import com.sven.riceapp.ui.home.health_guide.variety_document.RiceMainActivity;
 import com.sven.riceapp.ui.home.health_guide.variety_document.Variety;
 import com.sven.riceapp.ui.home.health_guide.variety_document.Water;
 
@@ -41,31 +42,38 @@ public class RiceVarietyActivity extends AppCompatActivity {
 //        listView = findViewById(R.id.lv_list_view);
         findId();
         button1.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), Variety.class);
+            Intent intent = new Intent(getApplicationContext(), RiceMainActivity.class);
+            intent.putExtra("message", "Variety");
             startActivity(intent);
         });
         button2.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), Land.class);
+            Intent intent = new Intent(getApplicationContext(), RiceMainActivity.class);
+            intent.putExtra("message", "Land");
             startActivity(intent);
         });
         button3.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), Crop.class);
+            Intent intent = new Intent(getApplicationContext(), RiceMainActivity.class);
+            intent.putExtra("message", "Planting");
             startActivity(intent);
         });
         button4.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), Nutrient.class);
+            Intent intent = new Intent(getApplicationContext(), RiceMainActivity.class);
+            intent.putExtra("message", "Nutrient");
             startActivity(intent);
         });
         button5.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), Water.class);
+            Intent intent = new Intent(getApplicationContext(), RiceMainActivity.class);
+            intent.putExtra("message", "Water");
             startActivity(intent);
         });
         button6.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), Pest.class);
+            Intent intent = new Intent(getApplicationContext(), RiceMainActivity.class);
+            intent.putExtra("message", "Pest");
             startActivity(intent);
         });
         button7.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), Harvest.class);
+            Intent intent = new Intent(getApplicationContext(), RiceMainActivity.class);
+            intent.putExtra("message", "Harvest");
             startActivity(intent);
         });
 //        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1 ,arrayManagement);

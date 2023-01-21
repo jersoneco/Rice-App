@@ -65,7 +65,7 @@ public class Land extends AppCompatActivity {
                 "Ang lalim ng tubig ay kailangang 5sm nang mapadali ang pagpapatag. \n\n" +
                 "5. Para sa sabog-tanim, gumawa ng maliliit na kanal sa gitna at sa gilid paikot ng pinitak " +
                 "para magsilbing lagusan ng sobrang tubig, ipunan ng kuhol, at daanan kung kailangang " +
-                "maghulip at magdamo. Ang kanal ay may lapad na 25sm at lalim na 5sm.\n";
+                "maghulip at magdamo. Ang kanal ay may lapad na 25sm at lalim na 5sm.\n\n\nSource: PhilRice. (2020). Sistemang Palaycheck, 9-11.\n\n";
 
         kahalagahan.setText(kahalagahan1);
         assessment.setText(assessment1);

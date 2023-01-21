@@ -3,18 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sven.riceapp">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <!-- <dist:module dist:instant="true" /> -->
+    <uses-feature android:name="android.hardware.camera" />
 
     <application
-        android:allowBackup="false"
+        android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:taskAffinity=""
         android:theme="@style/Theme.RiceApp"
-        tools:ignore="DataExtractionRules">
+        tools:ignore="AllowBackup">
         <activity
-            android:name=".ui.home.fertilizer_calculator.FertilizerLocation" />
+            android:name=".ui.home.health_guide.variety_document.RiceMainActivity"
+            android:parentActivityName=".ui.home.health_guide.RiceVarietyActivity"/>
+        <activity android:name=".ui.home.fertilizer_calculator.FertilizerLocation" />
         <activity android:name=".ui.home.fertilizer_calculator.FertilizerSelect" />
         <activity android:name=".ui.home.health_guide.variety_document.Harvest" />
         <activity android:name=".ui.home.health_guide.variety_document.Pest" />

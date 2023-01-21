@@ -131,7 +131,7 @@ public class Crop extends AppCompatActivity {
                 "2. Protektahan ang isinabog na binhi laban sa mga ibon, daga, kuhol at damo alinsunod " +
                 "sa isinusulong na paraan ng pamamahala sa peste.\n" +
                 "3. Gumamit ng drumseeder o isabog ang binhi nang pantay-pantay.\n4. Magsabog ng 1 kilong pinasibol na ekstrang binhi sa gilid ng pinitak na maaaring " +
-                "panghulip 7-10 araw pagkasabog upang sabay-sabay ang paggulang ng palay.\n\n ";
+                "panghulip 7-10 araw pagkasabog upang sabay-sabay ang paggulang ng palay.\n\n\nSource: PhilRice. (2020). Sistemang Palaycheck, 12-21.\n\n";
 
         kahalagahan.setText(kahalagahand);
         assessment.setText(assessmentd);

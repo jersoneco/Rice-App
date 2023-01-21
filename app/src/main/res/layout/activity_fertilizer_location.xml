@@ -15,7 +15,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="Location"
+            android:text="Valencia City"
+            android:fontFamily="@string/font_family_black"
+            android:textSize="40sp"
+            android:paddingBottom="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Barangay"
             android:fontFamily="@string/font_family_black"
             android:textSize="25sp"/>
         <LinearLayout

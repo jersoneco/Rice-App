@@ -59,7 +59,7 @@ public class Pest extends AppCompatActivity {
                 "4. Paramihin ang mga kaibigang insekto at iba pang kakamping organismo sa palayan " +
                 "na pumapatay sa mga peste. Ang barang pagbomba ng pestisidyo ay maaaring " +
                 "ikamatay ng mga kaibigang organismo. Ang pagpaparami sa mga ito ay matipid at " +
-                "pangmatagalan.\n\n";
+                "pangmatagalan.\n\n\nSource: PhilRice. (2020). Sistemang Palaycheck, 38-44.\n\n";
 
         kahalagahan.setText(kahalagahan1);
         assessment.setText(assessment1);

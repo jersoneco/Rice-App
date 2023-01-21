@@ -18,7 +18,7 @@
             <ImageView
                 android:id="@+id/picture"
                 android:layout_width="match_parent"
-                android:layout_height="127dp"
+                android:layout_height="200dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nutrient" />
 
@@ -104,6 +104,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:src="@drawable/zzz"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:layout_marginHorizontal="15dp"
                     android:layout_marginBottom="15dp"
                     android:scaleType="fitXY"
